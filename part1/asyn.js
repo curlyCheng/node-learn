@@ -1,3 +1,9 @@
+/**
+ * asyn.js
+ * 使用setTimeout实现异步
+ * 思考的同时可以做下一题，
+ * 思考出答案在把结果回调处理
+ */
 function Person(){
 	this.think = function(callback){
 		setTimeout(function(){

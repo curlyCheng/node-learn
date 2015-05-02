@@ -1,3 +1,7 @@
+/**
+ * 注意fs.readFile方法的使用规则
+ * 使用function(err,data)回调结果
+ */
 var fs = require('fs');
 var http = require('http');
 var path = require('path');
@@ -12,7 +16,7 @@ function returnData(file,callback){
 	getFileData(file,function(data){
 		setTimeout(function(){
 			callback(data);
-		},0);
+		},1000);
 	});
 }
 
